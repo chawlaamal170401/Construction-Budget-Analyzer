@@ -1,0 +1,162 @@
+<%- include("partials/header") %>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffd57e;">
+  <a class="navbar-brand"><h3 style="color: #1d2d50;">AA-AC Planners</h3></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/help">HELP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">CONTACT US</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="form">
+  <h2 style="color: #1d2d50; text-align: center;">Fill Details</h2>
+<form method="POST" action="/minform">
+<div class="card crd">
+    <div class="card-header crdhd">
+      <h3>Planning</h3>
+    </div>
+    <div class="card-body crdbd">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Enter Cost Per Day</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="cost11" min="1000" class="form-control" placeholder="Rs.(min 10Rs.)">
+            </div>        
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Profit Earned Per Day</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="profit11" min="400" class="form-control" placeholder="Rs.(min 400Rs.)">
+            </div>        
+        </div>
+    
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Staff Required Per Day</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="staff11" min="5" class="form-control" placeholder="No. of Persons(min 5 Persons)">
+            </div>        
+        </div>
+    </div>
+</div>
+<div class="card crd">
+    <div class="card-header crdhd">
+      <h3>Business And Transportation</h3>
+    </div>
+    <div class="card-body crdbd">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Enter Cost Per Day</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="cost22" min="1000" class="form-control" placeholder="Rs.(min 1000Rs.)">
+            </div>        
+        </div>
+    
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Profit Earned Per Day</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="profit22" min="200" class="form-control" placeholder="Rs.(min 20Rs.)">
+            </div>        
+        </div>
+    
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Staff Required Per Day</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="staff22" min="5" class="form-control" placeholder="No. of Persons(min 5 Person)">
+            </div>        
+        </div>
+  </div>
+</div>
+<div class="card crd">
+    <div class="card-header crdhd">
+      <h3>Site Work And Finishing</h3>
+    </div>
+    <div class="card-body crdbd">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Enter Cost Per Day</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="cost33" min="500" class="form-control" placeholder="Rs.(min 500Rs.)">
+            </div>        
+        </div>
+    
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Profit Earned Per Day</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="profit33" min="100" class="form-control" placeholder="Rs.(min 100Rs.)">
+            </div>        
+        </div>
+    
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Staff Required Per Day</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="staff33" min="10" class="form-control" placeholder="No. of Persons(min 10 Persons)">
+            </div>        
+        </div>
+  </div>
+</div>
+
+<div class="card crd">
+    <div class="card-header crdhd">
+     <h3> Other </h3>
+    </div>
+    <div class="card-body crdbd">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Min Profit</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="R" min="0" class="form-control" placeholder="Rs.">
+            </div>        
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Min number of Staff Required</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="staff" min="30" class="form-control" placeholder="No. Of Staff(min 30 Persons)">
+            </div>        
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label><h5>Total Budget</h5></label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" name="budget" min="50000" class="form-control" placeholder="Rs.(min 50000Rs.)">
+            </div>        
+        </div>
+  </div>
+</div><br>
+<button type="submit" class="btn btn-lg btn-warning">Submit</button>
+</form>
+</div>
+
+
+<%- include("partials/footer") %> 

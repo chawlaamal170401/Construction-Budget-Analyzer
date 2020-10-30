@@ -1,0 +1,48 @@
+<%- include("partials/header") %>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffd57e;">
+    <a class="navbar-brand"><h3 style="color: #1d2d50;">AA-AC Planners</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">HOME<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/help">HELP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+  
+
+<div class="help">
+    <h1>A LITTLE INITIATIVE</h1>
+<section id="max">
+    <div class="conatiner-fluid">
+        <h2>Maximizing The Profit</h2>
+        <p>You will enter the budget of the project, the duration of the project and the number of staff you are hiring for the project.
+            Next enter the per day cost, staff required, and the profit in each of your works.
+            After entering the above data according to your project we will be finding for you the best distribution of your days in each of the work hence maximizing your profit.
+        </p><br>
+        <a href="/maxform" class="btn btn-lg btn-outline-warning">Calculate</a>
+    </div>
+</section><br>
+<hr>
+<section id="min">
+    <div class="container-fluid">
+        <h2>Minimizing The Project Duration.</h2>
+        <p>You will be enter the budget of the project, the number of staff you are hiring for the project and the minimum profit you are seeking to earn.
+            Next enter the per day cost, staff required and the profit in each of your work.
+            After entering the above data according to the project we will be finding for you the best distribution of your days in each of the work hence minimizing your project duration.
+        </p>
+        <a href="/minform" class="btn btn-lg btn-outline-dark">Calculate</a>
+    </div>
+</section>
+</div>
+<%- include("partials/footer") %> 
