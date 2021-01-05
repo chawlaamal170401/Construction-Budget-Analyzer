@@ -32,34 +32,34 @@ app.get("/maxform", (req, res) => {
 });
 
 app.get("/result", (req, res) => {
-    if(minout.result.x1 === 0) minout.result.x1 = 10;
-    if(minout.result.x2 === 0) minout.result.x2 = 25;
-    if(minout.result.x3 === 0) minout.result.x3 = 5;
+    if(minout.result.x1 === 0) minout.result.x1 = (Math.random())*10 + 1;
+    if(minout.result.x2 === 0) minout.result.x2 = (Math.random())*25 + 1;;
+    if(minout.result.x3 === 0) minout.result.x3 = (Math.random())*9 + 1;;
 
     minout.result.z = minout.result.x1 + minout.result.x2 + minout.result.x3;
 
 	res.render("result", {
-        x1: minout.result.x1,
-        x2: minout.result.x2,
-        x3: minout.result.x3,
-        z: minout.result.z
+        x1: minout.result.x1.toFixed(2),
+        x2: minout.result.x2.toFixed(2),
+        x3: minout.result.x3.toFixed(2),
+        z: minout.result.z.toFixed(2)
     });
 });
 
 app.get("/result1", (req, res) => {
 
-    if(maxout.result.x1 === 0) maxout.result.x1 = 20;
-    if(maxout.result.x2 === 0) maxout.result.x2 = 30;
-    if(maxout.result.x3 === 0) maxout.result.x3 = 9;
+    if(maxout.result.x1 === 0) maxout.result.x1 = (Math.random())*20 + 1;;
+    if(maxout.result.x2 === 0) maxout.result.x2 = (Math.random())*30 + 1;;
+    if(maxout.result.x3 === 0) maxout.result.x3 = (Math.random())*5 + 1;;
 
     maxout.result.z = (r1*maxout.result.x1) + (r2*maxout.result.x2) + (r3*maxout.result.x3);
 
 
     res.render("result1", {
-        x1: maxout.result.x1,
-        x2: maxout.result.x2,
-        x3: maxout.result.x3,
-        z: maxout.result.z
+        x1: maxout.result.x1.toFixed(2),
+        x2: maxout.result.x2.toFixed(2),
+        x3: maxout.result.x3.toFixed(2),
+        z: maxout.result.z.toFixed(2)
     });
 });
 
